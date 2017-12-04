@@ -1,4 +1,9 @@
+load 'extras/security.rb'
+
 class ArticlesController < ApplicationController
+
+    http_basic_authenticate_with name: $user, password: $password, except: [:index, :show]
+
     def index
         @articles = Article.all
     end
