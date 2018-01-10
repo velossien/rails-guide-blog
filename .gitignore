@@ -25,3 +25,9 @@
 app/controllers/extras/security\.rb
 
 config/secrets\.yml
+
+db/\.DS_Store
+
+app/controllers/\.DS_Store
+
+\.DS_Store
